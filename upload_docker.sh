@@ -5,12 +5,12 @@
 
 # Step 1:
 # Create dockerpath
-dockerpath=prediction-api:1.0
+dockerpath=prediction-api
 
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
-docker tag prediction-api:1.0 kikiolu25/prediction-api:1.0
+docker tag prediction-api kikiolu25/prediction-api:1.0
 docker login -u kikiolu25 -p $PASSWORD
 
 # Step 3:
