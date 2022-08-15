@@ -11,7 +11,6 @@ dockerpath=prediction-api
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
 docker tag prediction-api kikiolu25/prediction-api:1.0
-docker login -u kikiolu25 -p $PASSWORD
 
 # Step 3:
 # Push image to a docker repository
