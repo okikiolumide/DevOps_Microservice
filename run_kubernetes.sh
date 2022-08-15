@@ -4,11 +4,11 @@
 
 # Step 1:
 # This is your Docker ID/path
-dockerpath=kikiolu25/prediction-api:1.0
+dockerpath=prediction-api
 
 # Step 2
 # Run the Docker Hub container with kubernetes
-kubectl run prediction-app -i kikiolu25/prediction-api:1.0 -p 80
+kubectl run prediction-app --image kikiolu25/prediction-api:1.0 --port 80
 
 # Step 3:
 # List kubernetes pods
