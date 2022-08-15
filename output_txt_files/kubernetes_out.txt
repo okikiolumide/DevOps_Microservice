@@ -1,3 +1,10 @@
+ubuntu@ip-172-31-17-203:~/DevOps_Microservice$ ./run_kubernetes.sh
+Error from server (AlreadyExists): pods "prediction-app" already exists
+NAME             READY   STATUS    RESTARTS   AGE
+prediction-app   1/1     Running   0          8m15s
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+
 ubuntu@ip-172-31-17-203:~/DevOps_Microservice$ k logs prediction-app
  * Serving Flask app "app" (lazy loading)
  * Environment: production
